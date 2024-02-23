@@ -1,32 +1,33 @@
-
 body, nav {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px 0;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 10px;
-    background-color: #555;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  nav a:hover {
-    background-color: #777;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex; /* Makes the body a flex container */
+}
+
+nav {
+  display: flex;
+  flex-direction: column; /* Stacks the nav links vertically */
+  justify-content: flex-start;
+  background-color: #333;
+  padding: 10px;
+  height: 100vh; /* Makes the nav take the full height of the viewport */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 2px 0; /* Adjusts margin for vertical spacing */
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #777;
+}

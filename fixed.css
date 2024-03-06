@@ -186,6 +186,11 @@ body {
     .social__media--wrap {
         flex-direction: column;
     }
+
+    .footer__link--items {
+        text-align: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 480px) {

@@ -8,8 +8,11 @@
 
 body {
     background-color: whitesmoke;
-    /* font-family: sans-serif; */
-    /* background-color: pink; */
+}
+
+.content {
+    border: 1px solid black;
+    box-shadow: 0 0 1 rgba(0, 0, 0, 0.5);
 }
 
 /* CSS STYLING FOR THE BLACK BOX WITH THE INSTAGRAM LOGO IS */
@@ -322,4 +325,21 @@ body {
 
 .navbar__links:hover {
     text-decoration: none;
+}
+
+sup {
+    position: absolute;
+    left: -10px;
+    top: -4px;
+    font-size: .85rem;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+        font-size: .75rem;
+    }
+
+    sup {
+        font-size: .75rem;
+    }
 }

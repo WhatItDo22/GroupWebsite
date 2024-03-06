@@ -342,4 +342,8 @@ sup {
     sup {
         font-size: .75rem;
     }
+
+    .navbar__item {
+        padding: 0 .5rem;
+    }
 }

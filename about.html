@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT | KIKIDIDDAT </title>
     <link rel="icon" href="KIKI__LOGO.png" type="img">
-    <link rel="stylesheet" href="fixed.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="igraph.css">
     <style>
         #announcement-bar {
           background-color: lightpink;
@@ -31,8 +31,26 @@
         #announcement-bar a:hover{
             text-decoration: underline;
         }
-
-      </style>
+        .kiki--me {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 0 30px;
+            /* background-image: url('kikiarts/recent--kikiart.png'); */
+        }
+        #its__kiki {
+            text-align: center;
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        @media screen and (max-width: 960px) {
+            #its__kiki {
+            height: 80%;
+        }
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -59,27 +77,14 @@
             </div>
         </div>
 
-        <div class="navbar" id="navbar" style="border: .25px solid black;">
-            <div class="navbar__container">
-                <!-- <a href="index.html" id="navbar__logo">KIKIARTS</a> -->
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__links"><sup>1</sup>Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="art.html" class="navbar__links"><sup>2</sup>Art</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="infographic.html" class="navbar__links"><sup>3</sup>Infographic</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="contact.html" class="navbar__links"><sup>4</sup>Contact</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="about.html" class="navbar__links"><sup>5</sup>About</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="navbar">
+            <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
+                alt="Kiki Logo"></a>
+            <a href="index.html">Home</a>
+            <a href="art.html">Art</a>
+            <a href="social.html">Social</a>
+            <a class="active" href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
     </header>
     

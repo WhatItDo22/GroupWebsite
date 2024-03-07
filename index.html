@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIKIARTS | Nikky-KIKI</title>
     <link rel="icon" href="kikiarts/KIKI__LOGO.png" type="img">
-    <link rel="stylesheet" href="fixed.css">
-    <link rel="stylesheet" href="kiki.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="igraph.css">
     <meta name="theme-color" content="#FFB6C1" 
       media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#FFB6C1" media="(prefers-color-scheme: dark)">
@@ -14,7 +14,8 @@
     woman business owner, art woman, book art educator, MultiMedia artist, 
     motionhustlers, domincan artist">
     <style>
-        #announcement-bar {
+        #announcement-bar 
+        {
           background-color: lightpink;
           color: #fff;
           padding: 10px;
@@ -28,16 +29,182 @@
           transition: opacity 0.5s ease;
           display: none; /* Initially hide the announcement bar */
         }
-
-        #announcement-bar a{
+        #announcement-bar a
+        {
             text-decoration: none;
             color: white;
         }
 
-        #announcement-bar a:hover{
+        #announcement-bar a:hover
+        {
             text-decoration: underline;
         }
+        .kiki__banner 
+        {
+            background-color: white;
+            background-size: cover;
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            box-shadow: 0 0 1 rgba(0, 0, 0, 0.5);
+            margin: 0 30px;
+        }
+        .kiki__banner h1 
+        {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .kiki__banner p 
+        {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .columntop 
+        {
+            background-color: white;
+            margin: 2rem 30px;
+            padding: 2rem 0;
+        }
+        .bio__container 
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            margin: 0 auto;
+            z-index: 5;
+            width: 100%;
+            max-width: 1300px;
+            padding: 0 15px;
+        }
+        .bio__column h2 
+        {
+            font-size: 2rem;
+            margin-top: 1rem;
+            background-color: white;
+            background-image: linear-gradient(to top, red 0%, pink 100%);
+            background-size: 100%;
+            /* THE FOLLOWING FOUR LINES ARE MY FAVORITE PIECE OF CODE */
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        @media screen and (max-width:1000px) 
+        {
+            .bio__column h2 {
+                font-size: 1.75rem;
+            }
+        }
+        @media screen and (max-width: 800px) 
+        {
+            .bio__container {
+                display: grid;
+                grid-template-columns: auto;
+                align-items: center;
+                justify-self: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .bio__column h2 {
+                text-align: center;
+                margin-bottom: 3.5rem;
+                font-size: 1.5rem;
+            }
+        }
+        @media screen and (max-width: 480px) 
+        {
+            .bio__column h2 
+            {
+                font-size: 1.25rem;
+            }
+        }
+        .product__display 
+        {
+            margin: 2rem 30px;
+            padding: 2rem 0;
+            border-radius: 8px;
+        }
+        .product__container 
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            margin: 0 auto;
+            z-index: 5;
+            width: 100%;
+            max-width: 1300px;
+            padding: 0 15px;
+        }
+        .product__container--left, .product__container--right 
+        {
+            /* color: white; */
+            color: whitesmoke;
+            border-radius: 8px;
+        }
+        .middle 
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-self: center;
+            text-align: center;
+            margin: 0 auto;
+            z-index: 5;
+            width: 100%;
+            max-width: 1300px;
+            padding: 0 15px;
+        }
+        .index__img 
+        {
+            height: 55%;
+            width: 55%;
+            border-radius: 50%;
+            border: 1px solid;
+        }
+        @media screen and (max-width: 800px) 
+        {
+            .product__container {
+                display: grid;
+                grid-template-columns: auto;
+                align-items: center;
+                justify-self: center;
+                width: 100%;
+                margin: 0 auto;
+            }
 
+            .product__container--left h3, .product__container--right h3 {
+                text-align: center;
+                margin-bottom: 2rem;
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: 690px) 
+        {
+            .index__img {
+                height: 70%;
+                width: 70%;
+            }
+        }
+        #profile--tag 
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+            height: 25vh;
+        }
+        .right {
+            margin-bottom: 2rem;
+        }
       </style>
 </head>
 <body>
@@ -65,27 +232,16 @@
             </div>
         </div>
 
-        <div class="navbar" id="navbar" style="border: .25px solid black;">
-            <div class="navbar__container">
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="index.html" class="navbar__links"><sup>1</sup>Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="art.html" class="navbar__links"><sup>2</sup>Art</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="infographic.html" class="navbar__links"><sup>3</sup>Infographic</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="contact.html" class="navbar__links"><sup>4</sup>Contact</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="about.html" class="navbar__links"><sup>5</sup>About</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="navbar">
+            <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
+                alt="Kiki Logo"></a>
+            <a class="active" href="index.html">Home</a>
+            <a href="art.html">Art</a>
+            <a href="social.html">Social</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </div>
+        
     </header>
 
     <div class="content">

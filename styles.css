@@ -56,6 +56,16 @@
     text-underline-offset: 2px;
 }
 
+.banner {
+    text-align: center;
+    height: 200px;
+    padding: 70px 0;
+    background-image: linear-gradient(rgb(241, 14, 14), rgb(236, 236, 63), rgb(255, 127, 242));
+}
+.banner h1 {
+    font-size: 40px;
+}
+
 body {
     background-color: whitesmoke;
 }

@@ -6,7 +6,6 @@
     <title>KIKIARTS | Nikky-KIKI</title>
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="igraph.css">
     <meta name="theme-color" content="#FFB6C1" 
       media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#FFB6C1" media="(prefers-color-scheme: dark)">
@@ -16,18 +15,18 @@
     <style>
         #announcement-bar 
         {
-          background-color: lightpink;
-          color: #fff;
-          padding: 10px;
-          text-align: center;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: 1000;
-          opacity: 0;
-          transition: opacity 0.5s ease;
-          display: none; /* Initially hide the announcement bar */
+            background-color: rgb(255, 182, 193);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: none; /* Initially hide the announcement bar */
         }
         #announcement-bar a
         {
@@ -38,29 +37,6 @@
         #announcement-bar a:hover
         {
             text-decoration: underline;
-        }
-        .kiki__banner 
-        {
-            background-color: white;
-            background-size: cover;
-            height: 230px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            color: black;
-            box-shadow: 0 0 1 rgba(0, 0, 0, 0.5);
-            margin: 0 30px;
-        }
-        .kiki__banner h1 
-        {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        .kiki__banner p 
-        {
-            font-size: 1rem;
-            margin-bottom: 1rem;
         }
         .columntop 
         {
@@ -209,38 +185,34 @@
 </head>
 <body>
     <header>
-    <div id="announcement-bar" style="border: 1px solid grey;">
-        <span>Check out KIKIARTS's products on 
-            <a href="https://www.depop.com/thatkidnoahgg/" target="_blank">DEPOP</a>.
-        </span>
-        <div class="close-bar" id="close-bar">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
-
-    <div class="navbar">
-        <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
-        alt="Kiki Logo"></a>
-        <a class="active" href="index.html">Home</a>
-        <a href="art.html">Art</a>
-        <a href="social.html">Social</a>
-        <a href="events.html">Events</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    </header>
-
-    <div class="content">
-        <section id="banner">
-            <div class="kiki__banner">
-                <h1><a href="index.html" style="text-decoration: none; color: black;">KIKIDIDDAT</a></h1>
-                <p>Based in Lawrence, Massachusetts</p>
+        <div id="announcement-bar" style="border: 1px solid grey;">
+            <span>Check out KIKIARTS's products on 
+                <a href="https://www.depop.com/thatkidnoahgg/" target="_blank">DEPOP</a>.
+            </span>
+            <div class="close-bar" id="close-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </section>
+        </div>
 
+        <div class="navbar">
+            <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
+            alt="Kiki Logo"></a>
+            <a class="active" href="index.html">Home</a>
+            <a href="art.html">Art</a>
+            <a href="social.html">Social</a>
+            <a href="events.html">Events</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="banner" id="home_banner">
+            <h1>KIKIDIDDAT</h1>
+            <h3>Based in Lawrence, Massachusetts</h3>
+        </div>
+    </header>
+    <div class="content">
     <div class="product__display" style="background-color: lightpink;">
         <div class="product__container" id="product__one">
             <div class="product__container--left" style="text-align: center;">

@@ -6,24 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACT | KIKIDIDDAT</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="igraph.css">
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
+    <style>
+        #form {
+            width: 100%;
+            overflow: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            background-color: rgb(255, 182, 193);
+        }
+        #form h2 {
+            font-size:50px;
+        }
+        #form .contact {
+            padding-left: 10%;
+            width: 40%;
+            float: left;
+            text-align: left;
+        }
+        #form .contactImage {
+            padding-right: 10%;
+            width: 50%;
+            float: right;
+        }
+        #form input {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: rgb(248, 119, 139);
+            border: 1px solid rgb(248, 119, 139);
+            height: 30px;
+        }
+        textarea {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: rgb(248, 119, 139);
+            border: 1px solid rgb(248, 119, 139);
+        }
+        input[type="submit"] {
+            display: block;
+            width: 60%;
+            border-width: 2px;
+            border-color: rgb(248, 119, 139);
+            margin: auto;
+            min-width: 300px;
+        }
+    </style>
 </head>
 <body>
     <header>
-    <div class="navbar">
-        <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
-        alt="Kiki Logo"></a>
-        <a href="index.html">Home</a>
-        <a href="art.html">Art</a>
-        <a href="social.html">Social</a>
-        <a href="events.html">Events</a>
-        <a href="timeline.html">Timeline</a>
-        <a href="about.html">About</a>
-        <a class="active" href="contact.html">Contact</a>
-    </div>
+        <div class="navbar">
+            <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
+            alt="Kiki Logo"></a>
+            <a href="index.html">Home</a>
+            <a href="art.html">Art</a>
+            <a href="social.html">Social</a>
+            <a href="events.html">Events</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+        <div class="banner" id="contact_banner">
+            <h1>CONTACT</h1>
+        </div>
     </header>
-
+    <div id="form" class="content">
+        <form action="#">
+            <div class="contact">
+                <h3>Write to me!</h3><br>
+                <label for="first-name">First Name:</label><br>
+                <input type="text" placeholder="Your first name" id="first-name" name="first-name" /><br>
+                <label for="last-name">Last Name:</label><br>
+                <input type="text" placeholder="Your last name" id="last-name" name="last-name" /><br>
+                <label for="email">Email:</label><br>
+                <input type="text" placeholder="Your email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="23" cols="65" placeholder="Write something..."></textarea><br>
+                <input type="submit" value="Submit" /> 
+    
+            </div>
+        </form>
+    </div>
     <footer class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">

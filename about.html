@@ -6,31 +6,7 @@
     <title>ABOUT | KIKIDIDDAT </title>
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="igraph.css">
     <style>
-        #announcement-bar {
-          background-color: lightpink;
-          color: #fff;
-          padding: 10px;
-          text-align: center;
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          z-index: 1000;
-          opacity: 0;
-          transition: opacity 0.5s ease;
-          display: none; /* Initially hide the announcement bar */
-        }
-
-        #announcement-bar a{
-            text-decoration: none;
-            color: white;
-        }
-
-        #announcement-bar a:hover{
-            text-decoration: underline;
-        }
         .kiki--me {
             display: flex;
             align-items: center;
@@ -54,18 +30,6 @@
 </head>
 <body>
     <header>
-        <div id="announcement-bar" style="border: 1px solid black;">
-            <span>
-                Check out KIKIARTS's products on 
-                <a href="https://www.depop.com/thatkidnoahgg/" target="_blank">DEPOP</a>.
-            </span>
-            <div class="close-bar" id="close-bar">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-
         <div class="navbar">
             <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
                 alt="Kiki Logo"></a>
@@ -76,6 +40,9 @@
             <a href="timeline.html">Timeline</a>
             <a class="active" href="about.html">About</a>
             <a href="contact.html">Contact</a>
+        </div>
+        <div class="banner" id="about_banner">
+            <h1>ABOUT</h1>
         </div>
     </header>
     

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVENTS | KIKIDIDDAT</title>
+    <script src="jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
 </head>
@@ -13,14 +14,22 @@
         <div class="navbar">
             <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
             alt="Kiki Logo"></a>
-            <a href="index.html">Home</a>
-            <a href="art.html">Art</a>
-            <a href="social.html">Social</a>
-            <a class="active" href="events.html">Events</a>
-            <a href="timeline.html">Timeline</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <div class="nav_menu">
+                <a href="index.html">Home</a>
+                <a href="art.html">Art</a>
+                <a href="social.html">Social</a>
+                <a class="active" href="events.html">Events</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
         <div class="banner" id="events_banner">
             <h1>EVENTS</h1>
         </div>
@@ -70,5 +79,15 @@
             </div>
         </div>
     </footer>
-  </body>
+    <script language="javascript">
+        const hamburgerMenu = document.querySelector(".hamburger_menu");
+        const navMenu = document.querySelector(".nav_menu");
+        hamburgerMenu.addEventListener("click", toggleMenu);
+
+        function toggleMenu() {
+            hamburgerMenu.classList.toggle("change");
+            navMenu.classList.toggle("change");
+        }
+    </script>
+</body>
 </html>

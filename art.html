@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIKIARTS | Nikky-KIKI</title>
+    <script src="jquery-3.7.1.min.js"></script>
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#FFB6C1" 
@@ -162,15 +163,23 @@
     <header>
         <div class="navbar">
             <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
-                alt="Kiki Logo"></a>
-            <a href="index.html">Home</a>
-            <a class="active" href="art.html">Art</a>
-            <a href="social.html">Social</a>
-            <a href="events.html">Events</a>
-            <a href="timeline.html">Timeline</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            alt="Kiki Logo"></a>
+            <div class="nav_menu">
+                <a href="index.html">Home</a>
+                <a class="active" href="art.html">Art</a>
+                <a href="social.html">Social</a>
+                <a href="events.html">Events</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
         <div class="banner" id="art_banner">
             <h1>ART</h1>
         </div>
@@ -275,38 +284,15 @@
         "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
     </script>  
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-        // Call showAnnouncementBarAfterDelay when the window loads
-        window.onload = showAnnouncementBarAfterDelay;
-        
-        function showAnnouncementBar() {
-            const announcementBar = document.getElementById("announcement-bar");
-            const head__socials = document.getElementById("head");
-            announcementBar.style.display = "block";
-            head__socials.classList.add("with-padding-top")
-            setTimeout(() => {
-                announcementBar.style.opacity = 1;
-            }, 50);
-        }
+    <script language="javascript">
+        const hamburgerMenu = document.querySelector(".hamburger_menu");
+        const navMenu = document.querySelector(".nav_menu");
+        hamburgerMenu.addEventListener("click", toggleMenu);
 
-        function hideAnnouncementBar() {
-            // const announcementBar = document.getElementById("announcement-bar");
-            const announcementBar = document.getElementById("announcement-bar");
-            announcementBar.style.opacity = 0;
-            setTimeout(() => {
-                announcementBar.style.display = "none";
-            }, 500);
+        function toggleMenu() {
+            hamburgerMenu.classList.toggle("change");
+            navMenu.classList.toggle("change");
         }
-
-        // Show the announcement bar 1 seconds after the window loads
-        function showAnnouncementBarAfterDelay() {
-            setTimeout(showAnnouncementBar, 1000);
-        }
-
-        // Call hideAnnouncementBar when X is clicked 
-        document.getElementById("close-bar").addEventListener("click", function() {
-            hideAnnouncementBar();
-        });
-      </script>
+    </script>
 </body>
 </html>

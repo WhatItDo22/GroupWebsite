@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIKIARTS | Nikky-KIKI</title>
+    <script src="jquery-3.7.1.min.js"></script>
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
     <meta name="theme-color" content="#FFB6C1" 
@@ -199,14 +200,22 @@
         <div class="navbar">
             <a class="logo" href="index.html"><img src="images/KIKI__LOGO.png" 
             alt="Kiki Logo"></a>
-            <a class="active" href="index.html">Home</a>
-            <a href="art.html">Art</a>
-            <a href="social.html">Social</a>
-            <a href="events.html">Events</a>
-            <a href="timeline.html">Timeline</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <div class="nav_menu">
+                <a class="active" href="index.html">Home</a>
+                <a href="art.html">Art</a>
+                <a href="social.html">Social</a>
+                <a href="events.html">Events</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="hamburger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
         <div class="banner" id="home_banner">
             <h1>KIKIDIDDAT</h1>
             <h3>Based in Lawrence, Massachusetts</h3>
@@ -397,6 +406,14 @@
         document.getElementById("close-bar").addEventListener("click", function() {
             hideAnnouncementBar();
         });
+        const hamburgerMenu = document.querySelector(".hamburger_menu");
+        const navMenu = document.querySelector(".nav_menu");
+        hamburgerMenu.addEventListener("click", toggleMenu);
+
+        function toggleMenu() {
+            hamburgerMenu.classList.toggle("change");
+            navMenu.classList.toggle("change");
+        }
       </script>
 </body>
 </html>

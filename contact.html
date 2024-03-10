@@ -158,35 +158,49 @@
             navMenu.classList.toggle("change");
         }
     </script>
-    <script>
+<script>
 $(document).ready(function() {
     $('form').on('submit', function(event) {
-        event.preventDefault(); 
+        event.preventDefault(); // Prevent form submission
 
-        // Remove the submit button
-        $('#submit-button').fadeOut(function() {
-            $(this).remove();
-        });
+        // Hide the submit button instead of removing it
+        $('#submit-button').hide();
 
         let thankYouMessage = "Thank you!";
-        let container = $('<div id="thank-you-container"></div>').insertAfter('#submit-button');
+        // Create a container for the "Thank You!" message, styled similarly to the submit button
+        let messageContainer = $('<div></div>').css({
+            display: 'block',
+            width: '60%',
+            margin: 'auto',
+            padding: '10px 0', 
+            background: 'rgb(248, 119, 139)',
+            border: '2px solid rgb(248, 119, 139)', 
+            color: '#fff', 
+            fontSize: '20px', 
+            borderRadius: '5px', 
+        }).insertAfter('#submit-button');
+
 
         function animateThankYou(index) {
             if (index < thankYouMessage.length) {
                 let letter = thankYouMessage[index];
-                $('<span>' + letter + '</span>').appendTo(container).css('opacity', '0').animate({
+                $('<span>' + letter + '</span>').appendTo(messageContainer).css('opacity', '0').animate({
                     opacity: 1
                 }, 500, function() {
-                    // Call the next letter
+
                     animateThankYou(index + 1);
                 });
+            } else if (index === thankYouMessage.length) {
+
             }
         }
+
 
         animateThankYou(0);
     });
 });
 </script>
+
 
 </body>
 </html>

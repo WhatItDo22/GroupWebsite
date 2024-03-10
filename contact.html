@@ -99,7 +99,7 @@
                 <input type="text" placeholder="Your email" id="email" name="email"><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="23" cols="65" placeholder="Write something..."></textarea><br>
-                <input type="submit" value="Submit" /> 
+                <input type="submit" value="Submit" id="submit-button" />
     
             </div>
         </form>
@@ -158,5 +158,35 @@
             navMenu.classList.toggle("change");
         }
     </script>
+    <script>
+$(document).ready(function() {
+    $('form').on('submit', function(event) {
+        event.preventDefault(); 
+
+        // Remove the submit button
+        $('#submit-button').fadeOut(function() {
+            $(this).remove();
+        });
+
+        let thankYouMessage = "Thank you!";
+        let container = $('<div id="thank-you-container"></div>').insertAfter('#submit-button');
+
+        function animateThankYou(index) {
+            if (index < thankYouMessage.length) {
+                let letter = thankYouMessage[index];
+                $('<span>' + letter + '</span>').appendTo(container).css('opacity', '0').animate({
+                    opacity: 1
+                }, 500, function() {
+                    // Call the next letter
+                    animateThankYou(index + 1);
+                });
+            }
+        }
+
+        animateThankYou(0);
+    });
+});
+</script>
+
 </body>
 </html>

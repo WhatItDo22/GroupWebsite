@@ -9,63 +9,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <style>
-          .title-word {
-            animation: color-animation 4s linear infinite;
-        }
-
-        .title-word-1 {
-          --color-1: #E984AE;
-          --color-2: #BB7AC5;
-          --color-3: #6A7AD1;
-        }
-        
-        .title-word-2 {
-          --color-1: #BB7AC5;
-          --color-2: #6A7AD1;
-          --color-3: #0079C7;
-        }
-        
-        .title-word-3 {
-          --color-1: #6A7AD1;
-          --color-2: #0079C7;
-          --color-3: #0070A3;
-        }
-        
-        .title-word-4 {
-          --color-1: #0079C7;
-          --color-2: #0070A3;
-          --color-3: #E984AE;
-        }
-
-        
-        @keyframes color-animation {
-          0%    {color: var(--color-1)}
-          32%   {color: var(--color-1)}
-          33%   {color: var(--color-2)}
-          65%   {color: var(--color-2)}
-          66%   {color: var(--color-3)}
-          99%   {color: var(--color-3)}
-          100%  {color: var(--color-1)}
-        }
-        
-        
-        
-        .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-around; 
-          text-align: center;
-          height: 100vh;
-        }
-
-        
-        .title {
-          font-family: "Montserrat", sans-serif;
-          font-weight: 800;
-          font-size: 8.5vw;
-          text-transform: uppercase;
-        }
         #form {
             width: 100%;
             overflow: auto;
@@ -160,28 +103,6 @@
     
             </div>
         </form>
-<div class="container">
-    <h2 class="title">
-        <span class="title-word title-word-1">Reach</span>
-        <span class="title-word title-word-2">Out</span>
-        <span class="title-word title-word-3">to</span>
-        <span class="title-word title-word-4">Me!</span>
-    </h2>
-    <h2 class="title">
-        <span class="title-word title-word-1">Reach</span>
-        <span class="title-word title-word-2">Out</span>
-        <span class="title-word title-word-3">to</span>
-        <span class="title-word title-word-4">Me!</span>
-    </h2>
-    <h2 class="title">
-        <span class="title-word title-word-1">Reach</span>
-        <span class="title-word title-word-2">Out</span>
-        <span class="title-word title-word-3">to</span>
-        <span class="title-word title-word-4">Me!</span>
-    </h2>
-</div>
-
-
     </div>
     <footer class="footer__container">
         <div class="footer__links">
@@ -240,14 +161,16 @@
 <script>
 $(document).ready(function() {
     $('form').on('submit', function(event) {
-        event.preventDefault(); 
+        event.preventDefault(); // Prevent form submission
 
-
+        // Hide the submit button instead of removing it
         $('#submit-button').hide();
 
         let thankYouMessage = "Thank you!";
+        // Create a container for the "Thank You!" message, styled similarly to the submit button
         let messageContainer = $('<div></div>').css({
             display: 'block',
+            textAlign: 'center',
             width: '60%',
             margin: 'auto', 
             background: 'rgb(248, 119, 139)', 
@@ -259,7 +182,7 @@ $(document).ready(function() {
                 let letter = thankYouMessage[index];
                 $('<span>' + letter + '</span>').appendTo(messageContainer).css('opacity', '0').animate({
                     opacity: 1
-                }, 200, function() {
+                }, 500, function() {
 
                     animateThankYou(index + 1);
                 });

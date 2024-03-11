@@ -14,28 +14,29 @@
         }
 
         .title-word-1 {
-          --color-1: #DF8453;
-          --color-2: #3D8DAE;
-          --color-3: #E4A9A8;
+          --color-1: #E984AE;
+          --color-2: #BB7AC5;
+          --color-3: #6A7AD1;
         }
         
         .title-word-2 {
-          --color-1: #DBAD4A;
-          --color-2: #ACCFCB;
-          --color-3: #17494D;
+          --color-1: #BB7AC5;
+          --color-2: #6A7AD1;
+          --color-3: #0079C7;
         }
         
         .title-word-3 {
-          --color-1: #ACCFCB;
-          --color-2: #E4A9A8;
-          --color-3: #ACCFCB;
+          --color-1: #6A7AD1;
+          --color-2: #0079C7;
+          --color-3: #0070A3;
         }
         
         .title-word-4 {
-          --color-1: #3D8DAE;
-          --color-2: #DF8453;
-          --color-3: #E4A9A8;
+          --color-1: #0079C7;
+          --color-2: #0070A3;
+          --color-3: #E984AE;
         }
+
         
         @keyframes color-animation {
           0%    {color: var(--color-1)}
@@ -50,11 +51,14 @@
         
         
         .container {
-          display: grid;
-          place-items: center;  
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around; 
           text-align: center;
-          height: 100vh
+          height: 100vh;
         }
+
         
         .title {
           font-family: "Montserrat", sans-serif;
@@ -156,15 +160,27 @@
     
             </div>
         </form>
-    <div class="container">
-            <h2 class="title">
-                <span class="title-word title-word-1">Reach</span>
-                <span class="title-word title-word-2">Out</span>
-                <span class="title-word title-word-3">to</span>
-                <span class="title-word title-word-4">Me!</span>
-            </h2>
-        </div>
-    </div>
+<div class="container">
+    <h2 class="title">
+        <span class="title-word title-word-1">Reach</span>
+        <span class="title-word title-word-2">Out</span>
+        <span class="title-word title-word-3">to</span>
+        <span class="title-word title-word-4">Me!</span>
+    </h2>
+    <h2 class="title">
+        <span class="title-word title-word-1">Reach</span>
+        <span class="title-word title-word-2">Out</span>
+        <span class="title-word title-word-3">to</span>
+        <span class="title-word title-word-4">Me!</span>
+    </h2>
+    <h2 class="title">
+        <span class="title-word title-word-1">Reach</span>
+        <span class="title-word title-word-2">Out</span>
+        <span class="title-word title-word-3">to</span>
+        <span class="title-word title-word-4">Me!</span>
+    </h2>
+</div>
+
 
     </div>
     <footer class="footer__container">

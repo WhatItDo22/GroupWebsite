@@ -9,6 +9,63 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <style>
+        .title-word {
+            animation: color-animation 4s linear infinite;
+        }
+
+        .title-word-1 {
+          --color-1: #E984AE;
+          --color-2: #BB7AC5;
+          --color-3: #6A7AD1;
+        }
+        
+        .title-word-2 {
+          --color-1: #BB7AC5;
+          --color-2: #6A7AD1;
+          --color-3: #0079C7;
+        }
+        
+        .title-word-3 {
+          --color-1: #6A7AD1;
+          --color-2: #0079C7;
+          --color-3: #0070A3;
+        }
+        
+        .title-word-4 {
+          --color-1: #0079C7;
+          --color-2: #0070A3;
+          --color-3: #E984AE;
+        }
+
+        
+        @keyframes color-animation {
+          0%    {color: var(--color-1)}
+          32%   {color: var(--color-1)}
+          33%   {color: var(--color-2)}
+          65%   {color: var(--color-2)}
+          66%   {color: var(--color-3)}
+          99%   {color: var(--color-3)}
+          100%  {color: var(--color-1)}
+        }
+        
+        
+        
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around; 
+          text-align: center;
+          height: 100vh;
+        }
+
+        
+        .title {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          font-size: 8.5vw;
+          text-transform: uppercase;
+        }
         #form {
             width: 100%;
             overflow: auto;

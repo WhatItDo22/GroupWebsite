@@ -138,10 +138,13 @@
             #form input[type="submit"] {
                 width: 100%;
             }
+            img #pfp {
+                width: 70%;
+            }
         }
         @media screen and (max-width: 600px) {
             #form .container {
-                padding-top: 0;
+                margin-top: -50px;
                 margin: 0;
                 width: 90%;
             }
@@ -149,11 +152,10 @@
                 width: 90%;
                 float: left;
                 text-align: center;
+                margin-top: 0;
             }
             #form h2 {
                 font-size:30px;
-                margin: 0px 0px;
-                padding: 0px 0px;
             }
         }
     </style>
@@ -184,7 +186,7 @@
         </div>
     </header>
     <div id="form" class="content">
-        <form action="#">
+        <form name = "myForm" action="#">
             <div class="container">
                 <h2 class="title">
                     <span class="title-word title-word-1">Reach</span>
@@ -203,11 +205,11 @@
             <div class="contact">
                 <h3>Write to me!</h3><br>
                 <label for="first-name">First Name:</label><br>
-                <input type="text" placeholder="Your first name" id="first-name" name="first-name" /><br>
+                <input type="text" placeholder="Your first name" id="first-name" name="first-name" required/><br>
                 <label for="last-name">Last Name:</label><br>
-                <input type="text" placeholder="Your last name" id="last-name" name="last-name" /><br>
+                <input type="text" placeholder="Your last name" id="last-name" name="last-name" required/><br>
                 <label for="email">Email:</label><br>
-                <input type="text" placeholder="Your email" id="email" name="email"><br>
+                <input type="text" placeholder="Your email" id="email" name="email" required/><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="23" cols="65" placeholder="Write something..."></textarea><br>
                 <input type="submit" value="Submit" id="submit-button" />
@@ -275,46 +277,45 @@
             hamburgerMenu.classList.toggle("change");
             navMenu.classList.toggle("change");
         }
+
     </script>
-<script>
-$(document).ready(function() {
-    $('form').on('submit', function(event) {
-        event.preventDefault();
-
-        let thankYouMessage = "Thank You!";
-        let $submitButton = $('#submit-button');
-
-            $submitButton.val("").prop('disabled', true);
-
-            $submitButton.css({
-                backgroundColor: '#F8778B',
+    <script>
+    $(document).ready(function() {
+        $('form').on('submit', function(event) {
+            let x = document.forms["myForm"]["message"].value;
+            event.preventDefault();
+            let thankYouMessage = "Thank You!";
+            let $submitButton = $('#submit-button');
+            if (x == "") {
+                alert("Make sure to include a message!");
+                return false;
+            } else {
+                $submitButton.val("").prop('disabled', true);
+                $submitButton.css({
+                    backgroundColor: '#F8778B',
                 color: '#FFFFFF'
-            });
-
+                });
+                animateThankYou(0);
+            }
             function animateThankYou(index) {
                 if (index < thankYouMessage.length) {
                     let updatedText = $submitButton.val() + thankYouMessage[index];
                     $submitButton.val(updatedText);
-
                     setTimeout(function() {
                         animateThankYou(index + 1);
                     }, 150);
                 } else {
                     setTimeout(function() {
-                        $submitButton.prop('disabled', false).val("Thank You!");
-                        $submitButton.css({
-                            backgroundColor: '#F8778B',
-                            color: '#FFFFFF'
+                    $submitButton.prop('disabled', false).val("Thank You!");
+                    $submitButton.css({
+                        backgroundColor: '#F8778B',
+                        color: '#FFFFFF'
                         });
                     }, 2000);
                 }
             }
-
-            animateThankYou(0);
         });
-});
-</script>
-
-
+    });
+    </script>
 </body>
 </html>

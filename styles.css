@@ -97,10 +97,6 @@ body:not(.navbar) {
     .hamburger_menu.change span:nth-child(3) {
         transform: translateY(-10px) rotate(-45deg)
     }
-    .hamburger_menu:hover {
-        transition: all 0.3s ease-in-out;
-        background-color: rgb(189, 189, 189);
-    }
     .nav_menu {
         position: fixed;
         left: -100%;

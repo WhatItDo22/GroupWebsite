@@ -91,13 +91,13 @@
         }
         #form .contact {
             padding-left: 10%;
-            width: 40%;
+            width: 45%;
             float: left;
             text-align: left;
         }
-        #form .contactImage {
+        #form .container {
             padding-right: 10%;
-            width: 50%;
+            width: 45%;
             float: right;
         }
 
@@ -127,8 +127,8 @@
             margin: auto;
             border-radius: 10px;
         }
-        img{
-            max-width: 100%;
+        img #pfp{
+            max-width: 90%;
             height: auto;
             border-radius:50% / 50%;
             padding: 10px;
@@ -139,7 +139,23 @@
                 width: 100%;
             }
         }
-
+        @media screen and (max-width: 600px) {
+            #form .container {
+                padding-top: 0;
+                margin: 0;
+                width: 90%;
+            }
+            #form .contact {
+                width: 90%;
+                float: left;
+                text-align: center;
+            }
+            #form h2 {
+                font-size:30px;
+                margin: 0px 0px;
+                padding: 0px 0px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -169,6 +185,21 @@
     </header>
     <div id="form" class="content">
         <form action="#">
+            <div class="container">
+                <h2 class="title">
+                    <span class="title-word title-word-1">Reach</span>
+                    <span class="title-word title-word-2">Out</span>
+                    <span class="title-word title-word-3">to</span>
+                    <span class="title-word title-word-4">Me!</span>
+                </h2>
+                <img src="images/kiki.jpg" alt="Your Image Description" id="pfp">
+                <h2 class="title">
+                    <span class="title-word title-word-1">Reach</span>
+                    <span class="title-word title-word-2">Out</span>
+                    <span class="title-word title-word-3">to</span>
+                    <span class="title-word title-word-4">Me!</span>
+                </h2>
+            </div>   
             <div class="contact">
                 <h3>Write to me!</h3><br>
                 <label for="first-name">First Name:</label><br>
@@ -180,24 +211,8 @@
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="23" cols="65" placeholder="Write something..."></textarea><br>
                 <input type="submit" value="Submit" id="submit-button" />
-    
             </div>
-        </form>
-    <div class="container">
-    <h2 class="title">
-        <span class="title-word title-word-1">Reach</span>
-        <span class="title-word title-word-2">Out</span>
-        <span class="title-word title-word-3">to</span>
-        <span class="title-word title-word-4">Me!</span>
-    </h2>
-    <img src="images/kiki.jpg" alt="Your Image Description">
-    <h2 class="title">
-        <span class="title-word title-word-1">Reach</span>
-        <span class="title-word title-word-2">Out</span>
-        <span class="title-word title-word-3">to</span>
-        <span class="title-word title-word-4">Me!</span>
-    </h2>
-</div>    
+        </form> 
     </div>
     <footer class="footer__container">
         <div class="footer__links">

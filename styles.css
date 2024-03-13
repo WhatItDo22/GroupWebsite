@@ -128,10 +128,6 @@ body:not(.navbar) {
     font-size: 40px;
 }
 
-body {
-    background-color: whitesmoke;
-}
-
 .content {
     background-color: #FF9A98;
 }

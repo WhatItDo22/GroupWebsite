@@ -1,0 +1,52 @@
+[
+    {
+        "name" : "Tigereye Waistbeads",
+        "price" : "20.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Emerald Waistbeads",
+        "price" : "21.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Golden Waistbeads",
+        "price" : "21.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Tricolor Waistbeads",
+        "price" : "19.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Teal Waistbeads",
+        "price" : "18.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Ruby Waistbeads",
+        "price" : "20.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Lightblue Waistbeads",
+        "price" : "18.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Pearl Waistbeads",
+        "price" : "21.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Yellow Waistbeads",
+        "price" : "20.99",
+        "category" : "Waistbeads"
+    },
+    {
+        "name" : "Waistbeads Set",
+        "price" : "99.99",
+        "category" : "Waistbeads"
+    },
+]

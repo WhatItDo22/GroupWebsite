@@ -17,7 +17,15 @@
                 -1px  1px 0 #000,
                  1px  1px 0 #000;
         }
-
+        #form select {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: rgb(248, 119, 139); 
+            border: 1px solid #ffffff;
+            height: 30px;
+            padding: 5px;
+        }
         .title-word-1 {
           --color-1: #E984AE;
           --color-2: #BB7AC5;
@@ -214,6 +222,13 @@
                 <input type="text" placeholder="Your last name" id="last-name" name="last-name" required/><br>
                 <label for="email">Email:</label><br>
                 <input type="text" placeholder="Your email" id="email" name="email" required/><br>
+                <label for="contact-reason">Reason for Contacting:</label><br>
+                <select id="contact-reason" name="contact-reason" required>
+                    <option value="">Please choose an option</option>
+                    <option value="inquiry">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                </select><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="23" cols="65" placeholder="Write something..."></textarea><br>
                 <input type="submit" value="Submit" id="submit-button" />

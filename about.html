@@ -7,6 +7,7 @@
     <script src="jquery-3.7.1.min.js"></script>
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
     <style>
         .kiki--me {
             display: flex;
@@ -55,18 +56,142 @@
         </div>
     </header>
     
-     <div class="content" style="height: 70vh;">
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <p>Art Designer</p>
+                <h3>Hi, I'm <span>Nikky</span><br>Founder of KIKIDIDDAT!</h3>
+            </div>
+        </div>
+    </div>
+
+    <!---------- about ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/hogar--painting.png" alt="painting here">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title ">About me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea 
+                        commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designer web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>ewrgihepwge </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>ewiohjg pewhgperh </li>
+                                <li><span>2019 - 2021</span><br>ewpriug epwoirgu eior </li>
+                                <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016</span><br>U/werupgihw ergu </li>
+                                <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                                <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------- services ---------->
+    <div id="services">
+        <div class="container">
+            <h3 class="sub-title ">My Services</h3>
+            <div class="services-list">
+                <div>
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h4>Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h4>App Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ portfoliio ---------->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Work</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/elgallocoaster.png" alt="image">
+                    <div class="layer">
+                        <h4>Title one</h4>
+                        <p>The app owhegiowhergoiwhj ouweoi wguoiweu goi w eogijwe .</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/elgallocoaster.png" alt="image">
+                    <div class="layer">
+                        <h4>Title two</h4>
+                        <p>The app owhegiowhergoiwhj ouweoi wguoiweu goi w eogijwe .</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/elgallocoaster.png" alt="image">
+                    <div class="layer">
+                        <h4>Title three</h4>
+                        <p>The app owhegiowhergoiwhj ouweoi wguoiweu goi w eogijwe .</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- <div class="content" style="height: 70vh;"> -->
         <!-- PAGE BANNER ADDED BORDER LINE TO SEE THE AMOUNT OF SPACE IT IS TAKING -->
-        <div class="page__banner" style="border: 1px solid red;"> 
+        <!-- <div class="page__banner" style="border: 1px solid red;"> 
             <h1 id="banner__h1" style="align-items: center; text-align: center; 
             margin: 0 auto; padding: 3rem 3rem; border: 1px solid blue; width: 300px;">
                 Header 1
             </h1>
-        </div>
+        </div> -->
 
         <!-- uncomment this div if you want space between the page__banner div and column__container div -->
         <!-- <div class="column__container" style="margin: 2rem 30px;"> -->
-            <div class="column__template" style="display: grid; grid-template-columns: 1fr 1fr; border: 1px solid red;">
+            <!-- <div class="column__template" style="display: grid; grid-template-columns: 1fr 1fr; border: 1px solid red;">
                 <div class="left" style="display: flex; flex-direction: column; border: 1px solid greenyellow; padding: 3rem 3rem; margin: 10px auto;">
                     <h2>header 2</h2>
                     <p>This is a p element tag </p>
@@ -75,7 +200,7 @@
                     <h2>header 2</h2>
                     <p>This is a p element tag </p>
                 </div>
-            </div>
+            </div> -->
         <!-- </div> -->
 
         <!--
@@ -100,23 +225,29 @@
 
 
         -->
-    </div>
+    <!-- </div> -->
 
     <footer class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
-                    <a href="about.html"><strong>About Me</strong></a>
+                    <p><strong>About Us</strong></p>
+                    <a href="about.html">How it Works</a>
+                    <a href="error.html">Quality</a>
                 </div>
                 <div class="footer__link--items">
-                    <a href="contact.html"><strong>Contact</strong></a>
+                    <p><strong>Support</strong></p>
+                    <a href="contact.html">Contact</a>
+                    <a href="error.html">Policies</a>
                 </div>
                 <div class="footer__link--items">
-                    <a href="social.html"><strong>Social</strong></a>
+                    <p><strong>Media</strong></p>
+                    <a href="error.html">Media Content</a>
+                    <a href="error.html">Feedback</a>
                 </div>
                 <div class="footer__link--items">
                     <form action="#" class="news--form">
-                        <label for="email" class="email--label">Subscribe to my Newsletter</label>
+                        <label for="email" class="email--label">Subscribe to our Newsletter</label>
                         <input type="text" placeholder="Email Address" 
                         class="email" id="email" autocomplete="email" required>
                         <input type="submit" class="submit--email" value="SIGN UP">
@@ -157,6 +288,23 @@
             hamburgerMenu.classList.toggle("change");
             navMenu.classList.toggle("change");
         }
+    </script>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
     </script>
 </body>
 </html>

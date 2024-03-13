@@ -11,6 +11,11 @@
         .content {
             padding-bottom: 30px;
         }
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
         .events-wrapper {
             display: flex;
             justify-content: center;
@@ -54,6 +59,21 @@
         .events-nav a:hover {
             opacity: 1;
         }
+        .events-description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .events-description ul {
+            list-style: none;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+        }
+        .events-description li {
+            font-size: 20px;
+        }
         @media screen and (max-width: 800px) {
             .events-container {
                 height: 500px;
@@ -96,6 +116,7 @@
     </header>
     
     <section class="content">
+        <h2>These were some of my favorite events I participated in last year!</h2>
         <div class="events-wrapper">
             <div class="events-container">
                 <img id="slide-1" src="images/podcast.jpg"  alt="Weekly Podcast Event"/>
@@ -113,6 +134,16 @@
                 <a href="#slide-5"></a>
                 <a href="#slide-6"></a>
             </div>
+        </div>
+        <div class="events-description">
+            <uL>
+                <li>Miss Thang Podcast</li>
+                <li>Punto Urban Art Museum Block Party</li>
+                <li>Love Market</li>
+                <li>Save the Date</li>
+                <li>Back to School Pop Up</li>
+                <li>Essex Art Center Block Party</li>
+            </uL>
         </div>
     </section>
     <footer class="footer__container">

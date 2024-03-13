@@ -32,6 +32,10 @@
   padding: 1.25rem 1.25rem 5rem 1.25rem;
   overflow-x: hidden;
 }
+.timeline_content .desc {
+  padding: 0.5rem;
+  font-size: 0.5rem;
+}
 
 .timeline_container {
   margin: 2rem 0;

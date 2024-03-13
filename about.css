@@ -8,30 +8,6 @@
 body {
     background: #080808;
     color: white;
-    /* margin: 0 2rem; */
-}
-
-.kiki--me {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0 30px;
-    /* background-image: url('images/recent--kikiart.jpg'); */
-}
-
-#its__kiki {
-    text-align: center;
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-@media screen and (max-width: 960px) {
-    #its__kiki {
-        height: 80%;
-    }
-
 }
 
 /* ---------- about ------------- */
@@ -44,7 +20,7 @@ body {
 }
 
 .container {
-    padding: 10px 10px;
+    padding: 10px 10%;
 }
 
 .header-text {
@@ -106,7 +82,8 @@ body {
 
 .tab-links::after {
     content: '';
-    width: 0;
+    width: 50%;
+    /* width: 0; */
     height: 3px;
     background: #ff004f;
     position: absolute;
@@ -116,6 +93,10 @@ body {
 }
 
 .tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-links:hover::after {
     width: 50%;
 }
 
@@ -261,4 +242,43 @@ body {
 
 .btn:hover {
     background: #ff004f;
+}
+
+/* ------------- responsive css ------- */
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url("kikiarts/heartcoaster.png");
+        background-size: cover;
+        height: 80vh;
+    }
+    .header-text {
+        margin-top: 80%;
+        font-size: 16px;
+    }
+    .header-text h3 {
+        font-size: 30px;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-col-1 img{
+        width: 80%;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    
 }

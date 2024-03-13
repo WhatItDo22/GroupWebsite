@@ -161,34 +161,32 @@ body {
     display: flex;
 }
 
+.footer__link--items:not(:last-child) {
+    padding-top: 50px;
+    font-size: 16px;
+}
+
 .footer__link--items {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* makes it start from the left side */
     margin: 16px;
     text-align: left;
-    width: 160px;
+    width: 200px;
     box-sizing: border-box;
-    font-size: .8rem;
-}
-
-.footer__link--items p {
-    margin-bottom: 12px;
-    font-size: .8rem;
-}
-
-.footer__link > h2 {
-    color: white;
 }
 
 .footer__link--items a {
     color: white;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+}
+
+.footer__link--items label {
+    font-size: 14px;
 }
 
 .footer__link--items a:hover {
-    color: whitesmoke;
+    color: rgb(189, 189, 189);
     transition: 0.3s ease-out;
 }
 

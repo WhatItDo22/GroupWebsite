@@ -15,11 +15,7 @@
             font-size: 30px;
             text-align: center;
             margin-bottom: 30px;
-        }
-        .events-wrapper {
-            position: relative;
-            max-width: 50rem;
-            margin: 0 auto;
+            padding: 0 30px;
         }
         .events-container {
             display: flex;
@@ -32,11 +28,11 @@
             width: 800px;
         }
         .events-container img {
-    height: 100%;
-    width: 100%; 
-    object-fit: scale-down; 
-    scroll-snap-align: start;
-}
+            height: 100%;
+            width: 100%; 
+            object-fit: scale-down; 
+            scroll-snap-align: start;
+        }
 
         .events-nav {
             display: flex;
@@ -82,10 +78,13 @@
                 padding: 0 20px;
             }
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 560px) {
             .events-container {
                 height: 300px;
                 width: 300px;
+            }
+            .events-description li {
+                font-size: 16px;
             }
         }
     </style>
@@ -116,7 +115,6 @@
     
     <section class="content">
         <h2>These were some of my favorite events I participated in last year!</h2>
-        <div class="events-wrapper">
             <div class="events-container">
                 <img id="slide-1" src="podcast.jpg"  alt="Weekly Podcast Event"/>
                 <img id="slide-2" src="event1.jpg" alt="Art Exhibition Event"/>
@@ -133,6 +131,21 @@
                 <a href="#slide-5"></a>
                 <a href="#slide-6"></a>
             </div>
+        <div class="events-container">
+            <img id="slide-1" src="images/podcast.jpg" alt="Weekly Podcast Event"/>
+            <img id="slide-2" src="images/event1.jpg" alt="Art Exhibition Event"/>
+            <img id="slide-3" src="images/event2.jpg" alt="Art Workshop Event"/>
+            <img id="slide-4" src="images/event3.jpg" alt="Art Auction Event"/>
+            <img id="slide-5" src="images/event4.jpg" alt="Art Competition Event"/>
+            <img id="slide-6" src="images/event5.jpg" alt="Art Gallery Event"/>
+        </div>
+        <div class="events-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+            <a href="#slide-6"></a>
         </div>
         <div class="events-description">
             <uL>

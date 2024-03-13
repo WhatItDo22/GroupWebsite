@@ -247,7 +247,6 @@ body {
 /* ------------- responsive css ------- */
 @media only screen and (max-width:600px) {
     #header {
-        background-image: url("kikiarts/heartcoaster.png");
         background-size: cover;
         height: 80vh;
     }

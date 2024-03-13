@@ -11,50 +11,50 @@
     lawrence artist, woman business owner, dominican art, pink art">
     <style>
         /* CSS STYLING FOR ALL OF THE INFOGRAPHIC IMAGES */
-        .main__container {
-            display: grid;
-            grid-template-columns: 1fr;
-            align-items: center;
-            justify-self: center;
-            margin: 0 auto;
-            z-index: 1;
-            width: 100%;
-            max-width: 1300px;
-            padding: 0 15px;
-        }
-
-        .graphic__image:nth-child(1) {
-            margin-top: 1rem;
-        }
-        .graphic__image:nth-child(5) {
-            margin-bottom: 1rem;
-        }
-        .graphic__image {
-            align-items: center;
-            justify-content: center;
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+            padding: 0px 10px;
         }
         .images {
             text-align: center;
+            font-size: 0;
         }
-        @media screen and (max-width: 1200px) {
-            .main__container {
-                display: grid;
-                grid-template-columns: auto;
-                align-items: center;
-                justify-self: center;
-                width: 100%;
-                margin: 0 auto;
+        .images img {
+            width: 300px;
+            height: 1200px;
+            object-fit: cover;
+        }
+        @media screen and (max-width: 1000px) 
+        {
+            .images img {
+                width: 230px;
+                height: 920px;
             }
-            .main__content {
-                text-align: center;
-                margin-bottom: 4rem;
+        }
+        @media screen and (max-width: 780px) 
+        {
+            .images img {
+                width: 200px;
+                height: 800px;
             }
-            .graphic__image {
-                height: 80%;
-                width: 80%;
+        }
+        @media screen and (max-width: 700px) 
+        {
+            .images img {
+                width: 150px;
+                height: 600px;
             }
-            .top__text {
-                font-size: 1rem;
+            h2 {
+                font-size: 24px;
+            }
+        }
+        @media screen and (max-width: 500px) 
+        {
+            .images img {
+                width: 300px;
+                height: 1200px;
             }
         }
       </style>
@@ -84,15 +84,34 @@
         </div>
     </header>
     
-    <div class="content" style="border: 1px solid black;">
-        <div class="main">
-            <div class="main__container">
-                <div class="images">
-                    <img src="images/infographic--pageone.png" alt="arts image 1" class="graphic__image">
-                    <img src="images/infographic--pagetwo.png" alt="arts image 2" class="graphic__image">
-                    <img src="images/infographic--pagethree.png" alt="arts image 3" class="graphic__image">
-                    <img src="images/infographic--pagefour.png" alt="arts image 4" class="graphic__image">
-                    <img src="images/infographic--pagefive.png" alt="arts image 5" class="graphic__image">
+    <div class="content">
+        <h2>Check out my latest Instagram posts!</h2>
+        <div class="main__container">
+            <div class="images">
+                <div class="grid" id="gridone">
+                    <img src="images/infographic--pageonea.jpg" alt="arts image 1a" class="graphic__image">
+                    <img src="images/infographic--pageoneb.jpg" alt="arts image 1b" class="graphic__image">
+                    <img src="images/infographic--pageonec.jpg" alt="arts image 1c" class="graphic__image">
+                </div>
+                <div class="grid" id="gridtwo">
+                    <img src="images/infographic--pagetwoa.jpg" alt="arts image 2a" class="graphic__image">
+                    <img src="images/infographic--pagetwob.jpg" alt="arts image 2b" class="graphic__image">
+                    <img src="images/infographic--pagetwoc.jpg" alt="arts image 2c" class="graphic__image">
+                </div>
+                <div class="grid" id="gridthree">
+                    <img src="images/infographic--pagethreea.jpg" alt="arts image 3a" class="graphic__image">
+                    <img src="images/infographic--pagethreeb.jpg" alt="arts image 3b" class="graphic__image">
+                    <img src="images/infographic--pagethreec.jpg" alt="arts image 3c" class="graphic__image">
+                </div>
+                <div class="grid" id="gridfour">
+                    <img src="images/infographic--pagefoura.jpg" alt="arts image 4a" class="graphic__image">
+                    <img src="images/infographic--pagefourb.jpg" alt="arts image 4b" class="graphic__image">
+                    <img src="images/infographic--pagefourc.jpg" alt="arts image 4c" class="graphic__image">
+                </div>
+                <div class="grid" id="gridfive">
+                    <img src="images/infographic--pagefivea.jpg" alt="arts image 4a" class="graphic__image">
+                    <img src="images/infographic--pagefiveb.jpg" alt="arts image 4b" class="graphic__image">
+                    <img src="images/infographic--pagefivec.jpg" alt="arts image 4c" class="graphic__image">
                 </div>
             </div>
         </div>

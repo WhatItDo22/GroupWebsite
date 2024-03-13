@@ -8,25 +8,67 @@
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .kiki--me {
+        .content {
+            padding-bottom: 30px;
+        }
+        .events-wrapper {
             display: flex;
-            align-items: center;
-            text-align: center;
             justify-content: center;
-            margin: 0 30px;
-            /* background-image: url('kikiarts/recent--kikiart.jpg'); */
+            align-items: center;
+            max-width: 50rem;
+            padding: 0px 50px;
         }
-        #its__kiki {
-            text-align: center;
-            width: 100%;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+        .events-container {
+            display: flex;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .25);
+            border-radius: 0.5rem;
+            height: 800px;
+            width: 800px;
         }
-        @media screen and (max-width: 960px) {
-            #its__kiki {
-            height: 80%;
+        .events-container img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            scroll-snap-align: start;
         }
-    }
+        .events-nav {
+            display: flex;
+            column-gap: 1rem;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 40%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .events-nav a {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.75;
+            transition: opacity ease 250ms;
+        }
+        .events-nav a:hover {
+            opacity: 1;
+        }
+        @media screen and (max-width: 800px) {
+            .events-container {
+                height: 500px;
+                width: 500px;
+            }
+            .events-wrapper {
+                padding: 0 20px;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .events-container {
+                height: 300px;
+                width: 300px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -53,7 +95,7 @@
             <h1>EVENTS</h1>
     </header>
     
-    <section class="events">
+    <section class="content">
         <div class="events-wrapper">
             <div class="events-container">
                 <img id="slide-1" src="images/podcast.jpg"  alt="Weekly Podcast Event"/>

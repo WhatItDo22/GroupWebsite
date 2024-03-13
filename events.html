@@ -8,20 +8,10 @@
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .content {
+                .content {
             padding-bottom: 30px;
         }
-        .events-wrapper {
-            position: relative;
-            max-width: 50rem;
-            margin: 0 auto;
-        }
-        h2 {
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 0 30px;
-        }
+
         .events-container {
             display: flex;
             overflow: auto;
@@ -33,11 +23,11 @@
             width: 800px;
         }
         .events-container img {
-            height: 100%;
-            width: 100%; 
-            object-fit: scale-down; 
-            scroll-snap-align: start;
-        }
+    height: 100%;
+    width: 100%; 
+    object-fit: scale-down; 
+    scroll-snap-align: start;
+}
 
         .events-nav {
             display: flex;
@@ -59,21 +49,11 @@
         .events-nav a:hover {
             opacity: 1;
         }
-        .events-description {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-        .events-description ul {
-            list-style: none;
-            text-align: center;
-            background-color: rgb(255, 255, 255);
-            border-radius: 15px;
-        }
-        .events-description li {
-            font-size: 20px;
-        }
+        .events-wrapper {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+}
         @media screen and (max-width: 800px) {
             .events-container {
                 height: 500px;
@@ -83,15 +63,13 @@
                 padding: 0 20px;
             }
         }
-        @media screen and (max-width: 560px) {
+        @media screen and (max-width: 800px) {
             .events-container {
                 height: 300px;
                 width: 300px;
             }
-            .events-description li {
-                font-size: 16px;
-            }
         }
+
     </style>
 </head>
 <body>

@@ -133,11 +133,9 @@ body {
     background-color: whitesmoke;
 }
 
-/*
 .content {
-    border: 2px solid black;
-    box-shadow: 0 0 1 rgba(0, 0, 0, 0.5);
-} */
+    background-color: #FF9A98;
+}
 
 /* CSS STYLING FOR THE FOOTER SECTION */
 .footer__container {

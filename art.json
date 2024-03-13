@@ -49,4 +49,84 @@
         "price" : "99.99",
         "category" : "Waistbeads"
     },
+    {
+        "name" : "Guidance Painting",
+        "price" : "30.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Seashell Painting",
+        "price" : "29.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Seashell-Change Painting",
+        "price" : "29.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Hogar Painting",
+        "price" : "33.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Auxillio Painting",
+        "price" : "32.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Lover Painting",
+        "price" : "28.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Stingray Painting",
+        "price" : "34.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Instigate Painting",
+        "price" : "37.99",
+        "category" : "Painting"
+    },
+    {
+        "name" : "Strawberry Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    },
+    {
+        "name" : "Avocado Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    },
+    {
+        "name" : "Papaya Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    },
+    {
+        "name" : "Evileye Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    },
+    {
+        "name" : "Kiwi Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    },
+    {
+        "name" : "Chicken Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    },
+    {
+        "name" : "Cafe Bustelo Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    },
+    {
+        "name" : "Heart Coaster",
+        "price" : "9.99",
+        "category" : "Coaster"
+    }
 ]

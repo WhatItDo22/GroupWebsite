@@ -14,6 +14,57 @@
     woman business owner, art woman, book art educator, MultiMedia artist, 
     motionhustlers, domincan artist">
     <style>
+        .content {
+            padding-bottom: 20px;
+        }
+        .content img {
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            object-fit: cover;
+        }
+        .content img:hover {
+            transform: scale(1.03);
+            transition: all 0.3s ease;
+        }
+        .waistbeads, .painting, .coaster {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .name, .price {
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+        }
+        .name {
+            margin-top: -10px;
+        }
+        .price {
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+        h2:first-child {
+            margin-bottom: 30px;
+        }
+        h2 a {
+            text-decoration: none;
+            color: rgb(110, 110, 110);
+        }
+        h2 a:hover {
+            text-decoration: underline;
+        }
+        .name {
+            text-transform: capitalize;
+        }
+        .price:before 
+        {
+            content: "$";
+        }
     </style>
 </head>
 <body>
@@ -43,7 +94,43 @@
     </header>
 
     <div class="content">
-
+        <h2>All products are available for purchase on my 
+            <a href="https://www.depop.com/thatkidnoahgg/" target="_blank">DEPOP</a></h2>
+        <h2>Waistbeads</h2>
+        <div id="waistbeads" class="waistbeads">
+            <div id="Tigereye"><img src="images/tigereye--waistbeads.jpg" alt="Tigereye Waistbeads"></div>
+            <div id="Emerald"><img src="images/emerald--waistbeads.jpg" alt="Emerald Waistbeads"></div>
+            <div id="Golden"><img src="images/golden--waistbead.jpg" alt="Golden Waistbeads"></div>
+            <div id="Tricolor"><img src="images/pgy-tricolor--waistbead.jpg" alt="Tricolor Waistbeads"></div>
+            <div id="Teal"><img src="images/teal--waistbead.jpg" alt="Teal Waistbeads"></div>
+            <div id="Ruby"><img src="images/ruby--waistbeads.jpg" alt="Ruby Waistbeads"></div>
+            <div id="Lightblue"><img src="images/lightblue--waistbead.jpg" alt="Lightblue Waistbeads"></div>
+            <div id="Pearl"><img src="images/pearl--waistbeads.jpg" alt="Pearl Waistbeads"></div>
+            <div id="Yellow"><img src="images/yellow--waistbeads.jpg" alt="Yellow Waistbeads"></div>
+            <div id="Waistbeads"><img src="images/multidisplay--waistbeads.jpg" alt="Waistbeads Set"></div>
+        </div>
+        <h2>Paintings</h2>
+        <div id="painting" class="painting">
+            <div id="Guidance"><img src="images/guidance--painting.jpg" alt="Guidance Painting"></div>
+            <div id="Seashell"><img src="images/seashell--painting.jpg" alt="Seashell Painting"></div>
+            <div id="Seashell-Change"><img src="images/seashell-change--painting.jpg" alt="Seashell Change Painting"></div>
+            <div id="Hogar"><img src="images/hogar--painting.jpg" alt="Hogar Painting"></div>
+            <div id="Auxillio"><img src="images/auxillio--painting.jpg" alt="Auxillio Painting"></div>
+            <div id="Lover"><img src="images/lover--painting.jpg" alt="Lover Painting"></div>
+            <div id="Stingray"><img src="images/stingray--painting.jpg" alt="Stingray Painting"></div>
+            <div id="Instigate"><img src="images/instigate--painting.jpg" alt="Instigate Painting"></div>
+        </div>
+        <h2>Coasters</h2>
+        <div id="coaster" class="coaster">
+            <div id="Strawberry"><img src="images/strawberrycoaster.jpg" alt="Strawberry Coaster"></div>
+            <div id="Avocado"><img src="images/avocadocoaster.jpg" alt="Avocado Coaster"></div>
+            <div id="Papaya"><img src="images/papayacoaster.jpg" alt="Papaya Coaster"></div>
+            <div id="Evileye"><img src="images/evileyecoaster.jpg" alt="Evileye Coaster"></div>
+            <div id="Kiwi"><img src="images/kiwicoaster.jpg" alt="Kiwi Coaster"></div>
+            <div id="Chicken"><img src="images/elgallocoaster.jpg" alt="Chicken Coaster"></div>
+            <div id="Cafe"><img src="images/cafebustelo--coaster.jpg" alt="Cafe Bustelo Coaster"></div>
+            <div id="Heart"><img src="images/heartcoaster.jpg" alt="Heart Coaster"></div>
+        </div>
     </div>
     
     <footer class="footer__container">
@@ -93,6 +180,19 @@
     </script>  
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script language="javascript">
+        $(document).ready(function(){
+            $.get("art.json", function(myObj) {
+                for (let i = 0; i < myObj.length; i++) {
+                    let obj = myObj[i];
+                    let objName = obj.name;
+                    let firstString = objName.substring(0, objName.indexOf(" "));
+                    var nameText = '<div class="name">' + obj.name + '</div>';
+                    var priceText = '<div class="price">' + obj.price + '</div>';
+                    $("#" + firstString).append(nameText, priceText);
+                }
+            }, "json");
+        });
+
         const hamburgerMenu = document.querySelector(".hamburger_menu");
         const navMenu = document.querySelector(".nav_menu");
         hamburgerMenu.addEventListener("click", toggleMenu);

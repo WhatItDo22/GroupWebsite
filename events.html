@@ -8,85 +8,34 @@
     <link rel="icon" href="images/KIKI__LOGO.png" type="img">
     <link rel="stylesheet" href="styles.css">
     <style>
-        .content {
-            padding-bottom: 30px;
-        }
-        h2 {
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 0 30px;
-        }
-        .events-container {
+        .kiki--me {
             display: flex;
-            overflow: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .25);
-            border-radius: 0.5rem;
-            height: 800px;
-            width: 800px;
-        }
-        .events-container img {
-            height: 100%;
-            width: 100%; 
-            object-fit: scale-down; 
-            scroll-snap-align: start;
-        }
-
-        .events-nav {
-            display: flex;
-            column-gap: 1rem;
-            position: absolute;
-            bottom: 1.25rem;
-            left: 40%;
-            transform: translateX(-50%);
-            z-index: 1;
-        }
-        .events-nav a {
-            width: 0.5rem;
-            height: 0.5rem;
-            border-radius: 50%;
-            background-color: #fff;
-            opacity: 0.75;
-            transition: opacity ease 250ms;
-        }
-        .events-nav a:hover {
-            opacity: 1;
-        }
-        .events-description {
-            display: flex;
-            justify-content: center;
             align-items: center;
-            padding: 10px;
-        }
-        .events-description ul {
-            list-style: none;
             text-align: center;
-            background-color: rgb(255, 255, 255);
-            border-radius: 15px;
+            justify-content: center;
+            margin: 0 30px;
+            /* background-image: url('kikiarts/recent--kikiart.jpg'); */
         }
-        .events-description li {
-            font-size: 20px;
+        #its__kiki {
+            text-align: center;
+            width: 100%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
-        @media screen and (max-width: 800px) {
-            .events-container {
-                height: 500px;
-                width: 500px;
-            }
-            .events-wrapper {
-                padding: 0 20px;
-            }
+        @media screen and (max-width: 960px) {
+            #its__kiki {
+            height: 80%;
         }
-        @media screen and (max-width: 560px) {
-            .events-container {
-                height: 300px;
-                width: 300px;
-            }
-            .events-description li {
-                font-size: 16px;
-            }
-        }
+    }
+    .events-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    body {
+        background-color: rgb(255, 182, 193);
+    }
     </style>
 </head>
 <body>
@@ -113,15 +62,15 @@
             <h1>EVENTS</h1>
     </header>
     
-    <section class="content">
-        <h2>These were some of my favorite events I participated in last year!</h2>
+    <section class="events">
+        <div class="events-wrapper">
             <div class="events-container">
-                <img id="slide-1" src="podcast.jpg"  alt="Weekly Podcast Event"/>
-                <img id="slide-2" src="event1.jpg" alt="Art Exhibition Event"/>
-                <img id="slide-3" src="event2.jpg" alt="Art Workshop Event"/>
-                <img id="slide-4" src="event3.jpg" alt="Art Auction Event"/>
-                <img id="slide-5" src="event4.jpg" alt="Art Competition Event"/>
-                <img id="slide-6" src="event5.jpg" alt="Art Gallery Event"/>
+                <img id="slide-1" src="images/podcast.jpg"  alt="Weekly Podcast Event"/>
+                <img id="slide-2" src="images/event1.jpg" alt="Art Exhibition Event"/>
+                <img id="slide-3" src="images/Event2.jpg" alt="Art Workshop Event"/>
+                <img id="slide-4" src="images/Event3.jpg" alt="Art Auction Event"/>
+                <img id="slide-5" src="images/Event4.jpg" alt="Art Competition Event"/>
+                <img id="slide-6" src="images/Event5.jpg" alt="Art Gallery Event"/>
             </div>
             <div class="events-nav">
                 <a href="#slide-1"></a>
@@ -131,31 +80,7 @@
                 <a href="#slide-5"></a>
                 <a href="#slide-6"></a>
             </div>
-        <div class="events-container">
-            <img id="slide-1" src="images/podcast.jpg" alt="Weekly Podcast Event"/>
-            <img id="slide-2" src="images/event1.jpg" alt="Art Exhibition Event"/>
-            <img id="slide-3" src="images/event2.jpg" alt="Art Workshop Event"/>
-            <img id="slide-4" src="images/event3.jpg" alt="Art Auction Event"/>
-            <img id="slide-5" src="images/event4.jpg" alt="Art Competition Event"/>
-            <img id="slide-6" src="images/event5.jpg" alt="Art Gallery Event"/>
-        </div>
-        <div class="events-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-            <a href="#slide-4"></a>
-            <a href="#slide-5"></a>
-            <a href="#slide-6"></a>
-        </div>
-        <div class="events-description">
-            <uL>
-                <li>Miss Thang Podcast</li>
-                <li>Punto Urban Art Museum Block Party</li>
-                <li>Love Market</li>
-                <li>Save the Date</li>
-                <li>Back to School Pop Up</li>
-                <li>Essex Art Center Block Party</li>
-            </uL>
+
         </div>
     </section>
     <footer class="footer__container">
